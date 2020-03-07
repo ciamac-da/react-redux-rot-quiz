@@ -1,3 +1,4 @@
+
 import React from 'react';
 // to import Checkbox from material-ui!!!
 import Checkbox       from '@material-ui/core/Checkbox';
@@ -9,15 +10,6 @@ import Favorite       from '@material-ui/icons/Favorite';
 // to import FavBorder from materail-ui!!!
 import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
 //Style
-import "./App.css";
-import ReactDOM from "react-dom";
-import { withStyles } from "@material-ui/core/styles";
-import Avatar from "@material-ui/core/Avatar";
-import Card from "@material-ui/core/Card";
-import CardTitle from "@material-ui/core/CardTitle";
-import CardText from "@material-ui/core/CardText";
-import CardActions from "@material-ui/core/CardActions";
-import Typography from "@material-ui/core/Typography";
 
 
 //
@@ -29,11 +21,13 @@ import Typography from "@material-ui/core/Typography";
   werden die Antworten ausgwertet und [nextQuestion] aus der [QuestionSet]
   Komponente aufgerufen.
  */
+const heart ={
+color:"black"
+}
 
 
 const AnswerStyle = {
-  color:"black",
-  display:"inline-table"
+  color:"white",
 }
 
 // Step by step!!!
@@ -48,36 +42,24 @@ const AnswerStyle = {
           question, correct, answers, chosen, select, nextQuestion ,classes
           
         }){ return (
-<div> 
 
 
-<Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
-    <CardTitle expand style={{color: '#fff', background: 'url("./codingQuotes.png") bottom right 15% no-repeat #46B6AC'}}>Update</CardTitle>
-    <CardText>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Aenan convallis.
-    </CardText>
-    <CardActions border>
-        <Button colored>View Updates</Button>
-    </CardActions>
-</Card>
-      
-
+<div className="Cia">
 
     <h1>{question}</h1>
-    { answers.map(
+     {answers.map(
       (answer,index)=> (
         <div key={index} className="answer" style={AnswerStyle}>
           <Checkbox
             onChange={select(index)}
             checked={chosen[index]}
-            icon={<FavoriteBorder />}
-            checkedIcon={<Favorite />}
+            icon={<FavoriteBorder style={heart}/>}
+            checkedIcon={<Favorite style={heart} />}
           /> {answer}
         </div> )
       )}
       
-      <Button variant="contained" color="primary" onClick={
+      <Button variant="contained" color="disabled" onClick={
         e => {
           const wasAnsweredCorrectly = chosen.reduce(
             (isCorrect,value,index)=> {
@@ -92,7 +74,7 @@ const AnswerStyle = {
       
         Next
       </Button>
-  </div> 
+</div>
 
   )
 }

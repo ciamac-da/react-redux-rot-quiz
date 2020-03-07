@@ -1,4 +1,40 @@
+:root{
+  background-color: gray; 
+  
+}
 .App {
+  font-family: 'Oxanium', cursive;
+  display: grid !important;
   text-align: center;
   background-color: red;
+  margin:20ch;
+  border-radius: 45px;
+}
+
+.categories{
+  background-color: red !important;
+  display: flex;
+  justify-content: center !important;
+  color: white !important;
+}
+
+.answer{
+  color: white !important;
+
+}
+
+.endGame{
+  color: black;
+  text-shadow: black;
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  border-radius: 25px;
+  margin: 20px;
+  text-align: center;
+ 
+}
+
+.Cia{
+  display: grid;
 }

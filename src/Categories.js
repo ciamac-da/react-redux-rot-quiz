@@ -49,6 +49,7 @@ export default function Categories(){
       <Button key={index} onClick={ e => {
         // Setze [category] auf die angeklickte Kategorie
         setState({category});
-      }}>{category}</Button> )}
+      }}>{category} 
+      </Button> )}
   </div> )
 }
