@@ -93,7 +93,7 @@ export default function QuestionSet({category,questions,reset}) {
   
   return (
     <div className="App">
-      {state.count === -1 ? null : `Question: ${state.count} Points: ${state.points}`}
+      {state.count === -1 ? null : `Question:${state.count}  /  Points:${state.points}`}
       <Question
         question={question}
         correct={correct}

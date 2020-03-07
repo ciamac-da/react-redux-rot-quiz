@@ -43,9 +43,7 @@ const AnswerStyle = {
           
         }){ return (
 
-
 <div className="Cia">
-
     <h1>{question}</h1>
      {answers.map(
       (answer,index)=> (
