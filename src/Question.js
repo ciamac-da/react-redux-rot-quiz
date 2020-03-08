@@ -52,7 +52,7 @@ const AnswerStyle = {
             onChange={select(index)}
             checked={chosen[index]}
             icon={<FavoriteBorder style={heart}/>}
-            checkedIcon={<Favorite style={heart} />}
+            checkedIcon={<Favorite style={AnswerStyle} />}
           /> {answer}
         </div> )
       )}
