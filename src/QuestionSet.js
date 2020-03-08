@@ -27,6 +27,10 @@ export default function QuestionSet({category,questions,reset}) {
     finished:false // Ist das Set beendet?
   });
 
+  const MyFont = {
+  fontFamily: "'Oxanium', cursive"
+
+  }
   // Destrukturiere die wichtigsten State-Werte in lokale Konstanten.
   const { count, points, question, correct, answers, chosen } = state;
 
@@ -35,9 +39,9 @@ export default function QuestionSet({category,questions,reset}) {
   //   die [reset] Funktion kommt über [props] aus der [Categories] Komponente.
   if ( state.finished ){
     return ( <div className="endGame">
-      <h1>You are done</h1>
-      <h2>Score {points} of {count}</h2>
-      <Button onClick={reset}>Done</Button>
+      <h1 style={MyFont}>You are done</h1>
+      <h2 style={MyFont}>Score {points} of {count}</h2>
+      <Button onClick={reset} style={{backgroundColor:"white", fontFamily: "'Oxanium', cursive"}}>Done</Button>
     </div> )
   }
 

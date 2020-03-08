@@ -46,7 +46,9 @@ export default function Categories(){
   return (
   <div className="categories">
     {categories.map( (category,index) =>
-      <Button key={index} onClick={ e => {
+      <Button style={{ fontFamily: "'Oxanium', cursive" , margin:"1ch" , 
+      fontSize:"1rem" , color:"white" , fontWeight:"bolder"}}
+       key={index} onClick={ e => {
         // Setze [category] auf die angeklickte Kategorie
         setState({category});
       }}>{category} 
