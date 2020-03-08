@@ -39,8 +39,7 @@ const AnswerStyle = {
 // 6th : nextQuestion
 // 7th : classes!!!
         export default function Question({
-          question, correct, answers, chosen, select, nextQuestion ,classes
-          
+          question, correct, answers, chosen, select, nextQuestion ,classes 
         }){ return (
 
 <div className="Cia">
