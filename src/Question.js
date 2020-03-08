@@ -42,7 +42,7 @@ const AnswerStyle = {
           question, correct, answers, chosen, select, nextQuestion ,classes 
         }){ return (
 
-<div className="Cia">
+<div className="Cia" >
     <h1>{question}</h1>
      {answers.map(
       (answer,index)=> (
