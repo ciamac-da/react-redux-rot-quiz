@@ -58,7 +58,7 @@ export default function Question({
           </div>)
       )}
 
-      <Button variant="contained" color="disabled" onClick={
+      <Button  variant="contained" color="disabled" onClick={
         e => {
           const wasAnsweredCorrectly = chosen.reduce(
             (isCorrect, value, index) => {

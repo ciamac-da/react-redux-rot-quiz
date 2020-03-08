@@ -41,7 +41,8 @@ export default function QuestionSet({category,questions,reset}) {
     return ( <div className="endGame">
       <h1 style={MyFont}>You are done</h1>
       <h2 style={MyFont}>Score {points} of {count}</h2>
-      <Button onClick={reset} style={{backgroundColor:"white", fontFamily: "'Oxanium', cursive"}}>Done</Button>
+      <Button onClick={reset} style={{backgroundColor:"white", fontFamily: "'Oxanium', cursive",
+      }}>Done</Button>
     </div> )
   }
 
