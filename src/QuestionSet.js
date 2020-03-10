@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button    from '@material-ui/core/Button';
-import DoneOutlineIcon from '@material-ui/icons/DoneOutline';
 import AccessibilityNewIcon from '@material-ui/icons/AccessibilityNew';
+import EmojiEmotionsIcon from '@material-ui/icons/EmojiEmotions';
 import Question  from './Question';
 
 /*
@@ -41,15 +41,19 @@ export default function QuestionSet({category,questions,reset}) {
   //   die [reset] Funktion kommt über [props] aus der [Categories] Komponente.
   if ( state.finished ){
     return ( <div className="endGame">
-      <h1 style={MyFont}>You are done! <br/>
+      <h1 style={MyFont}>You made it buddy! <br/>
 
         
-      <AccessibilityNewIcon/> 
+      <EmojiEmotionsIcon/> 
       
       </h1>
       <h2 style={MyFont}>Score {points} of {count} </h2>
       <Button onClick={reset} style={{backgroundColor:"white", fontFamily: "'Oxanium', cursive",
-      }}> <DoneOutlineIcon/> &nbsp; Done</Button>
+      }}>
+        Done
+       &nbsp;
+       <AccessibilityNewIcon/> 
+        </Button>
     </div> )
   }
 

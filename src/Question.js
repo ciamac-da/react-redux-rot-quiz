@@ -9,6 +9,7 @@ import Button from '@material-ui/core/Button';
 import Favorite from '@material-ui/icons/Favorite';
 // to import FavBorder from materail-ui!!!
 import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
+import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 //Style
 
 
@@ -70,8 +71,8 @@ export default function Question({
             , true);
           nextQuestion(wasAnsweredCorrectly ? 1 : 0);
         }}>
-
         Next
+        <NavigateNextIcon/>
       </Button>
     </div>
 
