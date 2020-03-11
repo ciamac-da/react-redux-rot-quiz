@@ -1,5 +1,7 @@
 :root{
+  /*
   background-color: gray; 
+  */
   background-image: url('./quiztime.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,13 +12,13 @@
   font-family: 'Oxanium', cursive;
   display: grid !important;
   text-align: center;
-  background-color: red;
+  background-color: rgb(57, 25, 175);
   margin:20ch;
   border-radius: 45px;
 }
 
 .categories{
-  background-color: red !important;
+  background-color:rgb(57, 25, 175)!important;
   display: flex;
   justify-content: center !important;
   color: white !important;
@@ -31,8 +33,9 @@
   color: black;
   text-shadow: black;
   display: flex;
+  margin-top: 200px !important;
   flex-direction: column;
-  background-color: red;
+  background-color: rgb(57, 25, 175);
   border-radius: 25px;
   margin: 20px;
   text-align: center;
